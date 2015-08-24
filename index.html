@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Email Sender in Node</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<h2 class="title">Subsistence Marketplaces</h1>
+	<h3 class="subtitle">Authorized instructors may access the materials pertaining to the Subsistence Marketplaces Initiative for educational purposes only.</h3>
+	<div class="conditions">
+	<p>Instructors may <strong>not</strong>:</p>
+		<ul class="list">
+			<li class="list-element">Attempt to download videos</li>
+			<li class="list-element">Share passwords</li>
+			<li class="list-element">Share website links</li>
+			<li class="list-element">Use materials for training programs</li>
+			<li class="list-element">Store materials on any server</li>
+			<li class="list-element">Distribute, publish, or copy materials</li>
+			<li class="list-element">Give access to materials to others</li>
+		</ul>	
+		<p>unless express permission is granted.</p>
+		<p>If you wish to obtain access to the materials and agree to the usage terms above, please fill out the form below.</p>
+	</div>
+
+	<div class="form">
+		Name:
+		<br>
+		<input type="text" id="name" placeholder="What is your name?">
+		<br>
+		Email:
+		<br>
+		<input type="text" id="email" placeholder="What is your organizational email address?">
+		<br>
+		Affiliation:
+		<br>
+		<input type="text" id="affiliation" placeholder="Which organization are you affiliated with?">
+		<br>
+		How will the materials be used?
+		<br>
+		<textarea id="usage" cols="40" rows="5"></textarea>
+		<br>
+		I accept the conditions listed above:
+		<input id="checked" type="checkbox">
+		<br>
+		<button id="send">Send Email</button>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+</body>
+</html>
