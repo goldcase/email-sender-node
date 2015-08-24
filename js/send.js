@@ -1,5 +1,5 @@
 function checkConditions() {
-	return $("#checked").prop("checked", true);
+	return $("#checked").prop("checked");
 }
 
 $(document).ready(function() {
@@ -10,11 +10,11 @@ $(document).ready(function() {
 
 	$("#send").click(function() {
 		function sendSuccess() {
-
+			alert("send success");
 		}
 
 		function sendFailure() {
-
+			alert("send failure");
 		}
 
 		function submitForm() {
@@ -24,9 +24,9 @@ $(document).ready(function() {
 			usage = $("#usage").val();
 
 			// Send post request for email.
-			$.post(window.location.origin + "/send", {
+			$.get(window.location.origin + "/send", {
 				name : name,
-				email: email
+				email: email,
 				affiliation: affiliation,
 				usage: usage
 			});
@@ -36,7 +36,7 @@ $(document).ready(function() {
 			alert("You haven't agreed to the conditions. Please try again.");
 		}
 
-		checkConditions() ? submitForm : tryAgain;
-	})
+		checkConditions() ? submitForm() : tryAgain();
+	});
 
 });
