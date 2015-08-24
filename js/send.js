@@ -30,6 +30,8 @@ $(document).ready(function() {
 				affiliation: affiliation,
 				usage: usage
 			});
+
+			sendSuccess();
 		}
 
 		function tryAgain() {
