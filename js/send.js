@@ -23,18 +23,17 @@ $(document).ready(function() {
 			affiliation = $("#affiliation").val();
 			usage = $("#usage").val();
 
-			// Send get request for email.
-			$.get(window.location.origin + "/send", {
+			// Send post request for email.
+			$.post(window.location.origin + "/send", {
 				name : name,
 				email: email
 				affiliation: affiliation,
 				usage: usage
 			});
-
 		}
 
 		function tryAgain() {
-
+			alert("You haven't agreed to the conditions. Please try again.");
 		}
 
 		checkConditions() ? submitForm : tryAgain;
