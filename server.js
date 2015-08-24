@@ -10,4 +10,6 @@ app.get("/", function(req, res) {
     res.sendfile("index.html");
 });
 
+app.get("/send", function(req, res) {
 
+});
