@@ -6,8 +6,9 @@ var app        = express();
 var smtpTransport = nodemailer.createTransport("SMTP", {
     service: "Gmail",
     auth: {
-        user: "sm@johnnychang.com",
-        pass: "hoopdadoopda"
+        // You can look through old commits but the passwords have since been changed.
+        user: "ENTER EMAIL HERE",
+        pass: "ENTER PASS HERE"
     }
 });
 
